@@ -1,0 +1,191 @@
+* {
+  font-family: sans-serif;
+}
+
+.container {
+  height: 380px;
+  width: 400px;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  text-align: left;
+  background-color: skyblue;
+  margin-top: 60px;
+  align-items: center;
+  padding: 40px 50px;
+  padding-left: 20px;
+  padding-bottom: 50px;
+  border-radius: 20px;
+}
+
+label {
+  margin-left: 50px;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+input {
+  height: 30px;
+  width: 260px;
+  text-align: center;
+  border: none;
+  border-radius: 25px;
+  outline: none;
+  font-size: 16px;
+  margin-top: 0px;
+  margin-right: 15px;
+  font-weight: 500;
+}
+
+.todo {
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-left: 60px;
+}
+
+#add {
+  border: none;
+  outline: none;
+  margin-top: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 1.5em;
+  color: black;
+  margin-left: 0px;
+  background-color: rgb(255, 108, 108);
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 300;
+  -webkit-box-shadow: 0 3px #999;
+  box-shadow: 0 3px #999;
+}
+
+/* button {
+  width: 120px;
+  height: 40px;
+  margin-left: 100px;
+  margin-top: -12px;
+  border-radius: 1.5em;
+  border: none;
+  outline: none;
+  background-color: orange;
+  font-size: 18px;
+  font-weight: 500;
+} */
+
+ol {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+button:active {
+  -webkit-transform: translateY(1px);
+  transform: translateY(1px);
+  -webkit-box-shadow: 0 1px darkblue;
+  box-shadow: 0 1px darkblue;
+}
+
+#list {
+  font-weight: 700;
+  color: darkgreen;
+  padding-inline-start: 30px;
+}
+
+/* #remBut {
+  border: none;
+  outline: none;
+  margin-top: 20px;
+  width: 120px;
+  height: 40px;
+  border-radius: 1.5em;
+  color: white;
+  margin-left: 30px;
+  background-color: #2b9dca;
+  font-size: 18px;
+  font-weight: 300;
+  -webkit-box-shadow: 0 3px #999;
+  box-shadow: 0 3px #999;
+} */
+
+img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.element {
+  position: relative;
+  height: 25px;
+  width: 50%;
+  right: 0;
+  text-align: left;
+  padding: 10px;
+  transition: 0.2s;
+  cursor: pointer;
+  background: #ffffff;
+  border-radius: 3px;
+  padding-right: 6px;
+}
+
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+  background-image: url("./criss-cross.svg");
+}
+
+li {
+  cursor: pointer;
+  position: relative;
+  padding: 15px;
+  margin-right: 10px;
+  margin-left: 10px;
+  list-style-type: none;
+  color: black;
+  background: rgb(13, 224, 83);
+  font-size: 18px;
+  transition: 0.2s;
+  margin-bottom: 5px;
+  border-radius: 1.5em;
+
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+span {
+  background: url("./criss-cross.svg");
+}
+
+.listClass {
+  height: 250px;
+  width: 400px;
+  overflow-y: auto;
+  max-width: 400px;
+}
+li:hover {
+  background-color: darkkhaki;
+}
+
+.checked::after {
+  background: rgb(0, 0, 0);
+  color: #fff;
+  text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+.checked::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
